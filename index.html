@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppzStory Studio</title>
+    <!-- CSS ONLY -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-transaparent">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo/text_logo.png" height="50px" alt="image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navKey"
+                aria-controls="navKey" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navKey">
+                <ul class="navbar-nav ms-auto  float-end ">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ผลงาน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">สมัครสมาชิก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">เข้าสู่ระบบ</a>
+                    </li>
+                    <li class="nav-item dropdown ms-auto text-right px-3">
+                        <a class="nav-link dropdown-toggle text-right" href="#" id="navbarDropdown" role="button"
+                         data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="profile-img" width="40px" height="40px"  src="assets/image/uploads/avatar.png" alt="">
+                            <strong class="text-capitalize">FirstName</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right text-capitalize rounded-lg mb-3" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="profile">
+                                    <div class="d-flex align-items-center">
+                                        <img class="profile-img" width="60px" height="60px" src="assets/image/uploads/avatar.png"> 
+                                        <div class="p-3 lh-sm">
+                                            <span class="font-weight-bold">FirstName LastName</span>  <br>
+                                            <small>ดูโปรไฟล์ของคุณ </small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                          <li>
+                            <a class="dropdown-item">
+                                <i class="fas fa-sign-out-alt"></i> ออกจากระบบ
+                            </a>
+                        </li>
+                        </ul>
+                      </li>
+
+
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- header -->
+    <!-- d-flex คือการสร้างกรอบครอบขึ้นมา ส่วน align-items-center เป็นการจัดขอบให้อยู่ตรงกลาง -->
+    <header class="page-header d-flex align-items-center ">
+        <div class="container">
+            <div class="row">
+                <h1>AppzStory Studio</h1>
+                <h2>สอนเขียนเว็บไซต์ด้วยตัวเองตั้งแต่ 0 - 100</h2>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- ส่วนของเนื้อหา -->
+    <section class="container">
+        <!-- ส่วนของ logo -->
+        <div class="row  justify-content-center">
+            <section class="col-12 col-md-8">
+                <img src="assets/image/logo/logo_bg.jpg" class="avatar">
+                <!-- ช่องสำหรับ Search -->
+                <div class="input-group mb-3">
+                    <input type="text" name="search" id="search" class="form-control"
+                        placeholder="ค้นหาครอสเรียน... PHP HTML CSS VUEJS">
+                    <span class="input-group-text btn btn-outline-info"><i class="fas fa-search"></i></span>
+                </div>
+            </section>
+        </div>
+        <!-- Card Content -->
+        <div class="row text-center py-5">
+            <section class="col-12 pb-3">
+                <h2>ครอสเรียนล่าสุด</h2>
+            </section>
+            <!-- card 1 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/k3JZI-sQs2k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Go Programming</h5>
+                        <p class="card-text">Agenda
+                            - Ports and Adaptros
+                            - jmoiron/sqlx
+                            - go-sql-driver/mysql
+                            - gorilla/mux
+                            - spf13/viper
+                            .
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 1 -->
+
+            <!-- card 2 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/M9lOp320M6A/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Blockchain & Smart Contract</h5>
+                        <p class="card-text">Agenda</p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 2 -->
+
+            <!-- card 3 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/Ov7SjLwjY8k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Flutter & Dart: Managing state with BLoC Design Pattern</h5>
+                        <p class="card-text">Agenda
+                            - Stream
+                            - Cubit
+                            - BLoC
+                            BLoC - From Zero to Hero by @Flutterly https://www.youtube.com/playlist?list...
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 3 -->
+
+            <!-- card 4 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/k3JZI-sQs2k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Go Programming</h5>
+                        <p class="card-text">Agenda
+                            - Ports and Adaptros
+                            - jmoiron/sqlx
+                            - go-sql-driver/mysql
+                            - gorilla/mux
+                            - spf13/viper
+                            .
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 4 -->
+
+            <!-- card 5 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/M9lOp320M6A/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Blockchain & Smart Contract</h5>
+                        <p class="card-text">Agenda - Stream - Cubit - BLoC BLoC - From Zero to Hero by @Flutterly</p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 5 -->
+
+            <!-- card 6 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/Ov7SjLwjY8k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Flutter & Dart: Managing state with BLoC Design Pattern</h5>
+                        <p class="card-text">Agenda
+                            - Stream
+                            - Cubit
+                            - BLoC
+                            BLoC - From Zero to Hero by @Flutterly https://www.youtube.com/playlist?list...
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 6 -->
+
+            <!-- card 7 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/Ov7SjLwjY8k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Flutter & Dart: Managing state with BLoC Design Pattern</h5>
+                        <p class="card-text">Agenda
+                            - Stream
+                            - Cubit
+                            - BLoC
+                            BLoC - From Zero to Hero by @Flutterly https://www.youtube.com/playlist?list...
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 7 -->
+
+
+            <!-- card 8 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/Ov7SjLwjY8k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Flutter & Dart: Managing state with BLoC Design Pattern</h5>
+                        <p class="card-text">Agenda
+                            - Stream
+                            - Cubit
+                            - BLoC
+                            BLoC - From Zero to Hero by @Flutterly https://www.youtube.com/playlist?list...
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 8 -->
+
+
+            <!-- card 9 -->
+            <section class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="card card-wrapper">
+                    <div class="card-image">
+                        <img src="http://i3.ytimg.com/vi/Ov7SjLwjY8k/maxresdefault.jpg" class="card-img-top">
+                        <img src="assets/image/logo/logo_bg.jpg" class="image-overlay">
+                    </div>
+                    <div class="card-body  d-flex flex-column">
+                        <div class="mb-3">
+                            <div class="star-rating">
+                                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i>
+                                <!-- คำนวณคะแนนเป็นเปอร์เซน (จำนวนคะแนน / 5 ดาว ) * 100  = จะได้เปอร์เซน์ -->
+                                <div class="star-current" style="width:50%">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <small class="text-muted">4.5 (50)</small>
+                        </div>
+                        <h5 class="card-title">Flutter & Dart: Managing state with BLoC Design Pattern</h5>
+                        <p class="card-text">Agenda
+                            - Stream
+                            - Cubit
+                            - BLoC
+                            BLoC - From Zero to Hero by @Flutterly https://www.youtube.com/playlist?list...
+                        </p>
+                        <a href="http://" class="btn btn-primary  font-weight-bold  mt-auto">Read MORE <i
+                                class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- end card 9-->
+
+
+        </div>
+        <!-- End row Card Content -->
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>เกี่ยวกับเรา</h6>
+                    <p>
+                        แนะนำตัวสักเล็กน้อย ชื่อ "กอล์ฟ" ครับ เป็นคนที่สนใจเกี่ยวกับเทคโนโลยี<br>
+                        ก็เลยจับเอาครอสฟรีต่างๆๆนำมาเผ่ยแพร่ให้กับคนอื่นได้รับรู้กระบวนการในการสร้าง
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6>หมวดหมู่</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Go Programming</a></li>
+                        <li><a href="#">BLOCKCHAIN</a></li>
+                        <li><a href="#">Flutter</a></li>
+                        <li><a href="#">Laravel</a></li>
+                        <li><a href="#">SQL</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>เมนู</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">หน้าหลัก</a></li>
+                        <li><a href="#">ผลงาน</a></li>
+                        <li><a href="#">สมัครสมาชิก</a></li>
+                        <li><a href="#">เข้าสู่ระบบ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-8">
+                        <p>
+                            Copyright &copy 2021 All Rights Reserved by
+                            <a href="#" target="_bank">Novel-Manga</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul class="social-icons text-center text-md-right">
+                            <li>
+                                <a href="#" class="facekbook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="progressContainer">
+        <div class="progressBar"></div>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <script>
+        //เมื่อมีเหตุเลือน scroll
+        window.addEventListener('scroll',function(){
+            let wintop = this.scrollY;
+            let navbar = document.querySelector('.navbar');
+
+            let winheight = this.innerHeight; //เป็นการตรวจความสูง
+            let docheight = document.querySelector('body').offsetHeight;
+            let totalScroll = (wintop / (docheight - winheight)) * 100;  //สูตรทำ progress  
+            let bar = document.querySelector('.progressBar');
+
+            bar.style.width =  `${totalScroll}%`;
+
+            if(wintop > 150){
+                // navbar-light bg-light
+                // navbar-dark bg-transaparent
+                navbar.classList.remove('bg-transaparent'); // function classlist.remove เป็นการลบ class ออก
+                navbar.classList.add('bg-tw'); //function classlist.add  เป็นการ add class ลงไป
+            }else{
+                // navbar-light bg-light
+                // navbar-dark bg-transaparent
+                navbar.classList.remove('bg-tw'); // function classlist.remove เป็นการลบ class ออก
+                navbar.classList.add('bg-transaparent'); //function classlist.add  เป็นการ add class ลงไป
+            
+            }
+        });
+    </script>
+</body>
+
+</html>
